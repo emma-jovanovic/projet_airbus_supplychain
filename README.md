@@ -14,7 +14,7 @@ Repérer les références qui ont le plus de retard (en incluant les manquants c
 
 <!-- Reprends ta fiche projet : le contexte en 2 ou 3 phrases, la question centrale, l'utilisateur. -->
 - **Contexte** : Pour absorber la hausse des commandes, Airbus Helicopters doit accélérer sa production, mais la moindre pièce manquante ou en retard bloque toute la chaîne d'assemblage
-- **Question centrale** : Comment identifier et prioriser les références critiques à partir des écarts de délais pour sécuriser la montée en cadence d'Airbus Hélicoptères
+- **Question centrale** : Comment identifier et prioriser les références critiques à partir des écarts de délais pour sécuriser la montée en cadence d'Airbus Hélicoptères ?
 - **Utilisateur** : Les managers du département logistique 
 
 ## 2. Les données
