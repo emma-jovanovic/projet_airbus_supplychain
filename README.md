@@ -5,25 +5,25 @@
   Repères Markdown : une ligne qui commence par # est un titre ; une ligne qui commence par - est une puce.
 -->
 
-# [Titre de ton projet]
+# Projet final Airbus Hélicoptères
 
 <!-- Une phrase qui dit ce que fait ton projet. Exemple : « Prévoir la production de 6 boulangeries selon la météo pour réduire les invendus. » -->
-[Ton projet en une phrase.]
+Repérer les références qui ont le plus de retard (en incluant les manquants comme retards extrêmes) pour agir en priorité dessus.
 
 ## 1. Le problème
 
 <!-- Reprends ta fiche projet : le contexte en 2 ou 3 phrases, la question centrale, l'utilisateur. -->
-- **Contexte** : [la situation et le problème constaté]
-- **Question centrale** : [Comment … pour … ?]
-- **Utilisateur** : [qui prend une décision grâce au projet]
+- **Contexte** : Pour absorber la hausse des commandes, Airbus Helicopters doit accélérer sa production, mais la moindre pièce manquante ou en retard bloque toute la chaîne d'assemblage
+- **Question centrale** : Comment identifier et prioriser les références critiques à partir des écarts de délais pour sécuriser la montée en cadence d'Airbus Hélicoptères
+- **Utilisateur** : Les managers du département logistique 
 
 ## 2. Les données
 
 <!-- Une ligne par source envisagée, comme dans ta fiche projet. -->
 | Source | Type | Ce qu'elle apporte |
 | --- | --- | --- |
-| [Nom de la source et qui la publie] | [CSV, Excel, site web, API, base de données] | [Les données utiles au projet] |
-| [Nom de la source et qui la publie] | [Type] | [Les données utiles au projet] |
+| Kaggle, Aerospace Supply Chain Performance & Forecasting | CSV | Contient les références de pièces, délais promis vs réels par commande fournisseur ainsi que l'historique hebdomadaire des ruptures et manquants. Permet de calculer les 3 KPI et d’identifier composants critiques |
+| Airbus SE (Espace Investisseurs / Newsroom officiel), Airbus Orders & Financial Results / Rapports de livraisons d'Airbus Helicopters | Excel | Contexte business, montre évolution de Airbus (évolution du nombre d'appareils à produire et livrer d'une année sur l'autre) |
 
 ## 3. L'organisation du dépôt
 
@@ -49,4 +49,4 @@
 - [ ] Analyse et tableau de bord
 
 ---
-[Ton prénom et ton nom] · Formation Data Analyst & IA · DataSuits
+Emma Jovanovic · Formation Data Analyst & IA · DataSuits
