@@ -13,7 +13,7 @@ Repérer les références qui ont le plus de retard (en incluant les manquants c
 ## 1. Le problème
 
 <!-- Reprends ta fiche projet : le contexte en 2 ou 3 phrases, la question centrale, l'utilisateur. -->
-- **Contexte** : Pour absorber la hausse des commandes, Airbus Helicopters doit accélérer sa production, mais la moindre pièce manquante ou en retard bloque toute la chaîne d'assemblage
+- **Contexte** : Pour absorber la hausse des commandes, Airbus Helicopters doit accélérer sa production: son carnet de commandes atteignait 1 122 hélicoptères fin septembre 2026. Cependant, la moindre pièce manquante ou en retard bloque toute la chaîne d'assemblage
 - **Question centrale** : Comment identifier et prioriser les références critiques à partir des écarts de délais pour sécuriser la montée en cadence d'Airbus Hélicoptères ?
 - **Utilisateur** : Les managers du département logistique 
 
@@ -23,7 +23,7 @@ Repérer les références qui ont le plus de retard (en incluant les manquants c
 | Source | Type | Ce qu'elle apporte |
 | --- | --- | --- |
 | Kaggle, Aerospace Supply Chain Performance & Forecasting | CSV | Contient les références de pièces, délais promis vs réels par commande fournisseur ainsi que l'historique hebdomadaire des ruptures et manquants. Permet de calculer les 3 KPI et d’identifier composants critiques |
-| Airbus SE (Espace Investisseurs / Newsroom officiel), Airbus Orders & Financial Results / Rapports de livraisons d'Airbus Helicopters | Excel | Contexte business, montre évolution de Airbus (évolution du nombre d'appareils à produire et livrer d'une année sur l'autre) |
+| Indice GSCPI, publié par la Réserve fédérale de New York  | Excel |Mesure mensuelle des tensions mondiales sur les chaînes d'approvisionnement, afin d’effectuer un croisement avec les retards avec la chaine logistique aéronautique et savoir si les retards suivent les tensions mondiales ou s'ils sont propres à certaines références. |
 
 ## 3. L'organisation du dépôt
 
