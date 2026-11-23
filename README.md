@@ -20,9 +20,9 @@ Repérer les références qui ont le plus de retard (en incluant les manquants c
 ## 2. Les données
 
 <!-- Une ligne par source envisagée, comme dans ta fiche projet. -->
-| Source | Type | Ce qu'elle apporte |
-| --- | --- | --- |
-| Kaggle, Aerospace Supply Chain Performance & Forecasting | CSV | Contient les références de pièces, délais promis vs réels par commande fournisseur ainsi que l'historique hebdomadaire des ruptures et manquants. Jeu de données synthétique. Permet de calculer les 3 KPI et d’identifier composants critiques |
+| Source | Type | Ce qu'elle apporte | comment je la récupère et à quel rythme |
+| --- | --- | --- | --- |
+| Kaggle, Aerospace Supply Chain Performance & Forecasting | CSV | Contient les références de pièces, délais promis vs réels par commande fournisseur ainsi que l'historique hebdomadaire des ruptures et manquants. Jeu de données synthétique. Permet de calculer les 3 KPI et d’identifier composants critiques | fichiers CSV téléchargés manuellement, une seule fois, sans rythme régulier. |
 | Indice GSCPI, publié par la Réserve fédérale de New York  | Excel |Mesure mensuelle des tensions mondiales sur les chaînes d'approvisionnement, afin d’effectuer un croisement avec les retards de la chaine logistique aéronautique et savoir si les retards suivent les tensions mondiales ou s'ils sont propres à certaines références. |
 
 ## 3. L'organisation du dépôt
