@@ -24,6 +24,7 @@ Repérer les références qui ont le plus de retard (en incluant les manquants c
 | --- | --- | --- | --- |
 | Kaggle, Aerospace Supply Chain Performance & Forecasting | CSV | Contient les références de pièces, délais promis vs réels par commande fournisseur ainsi que l'historique hebdomadaire des ruptures et manquants. Jeu de données synthétique. Permet de calculer les 3 KPI et d’identifier composants critiques | fichiers CSV téléchargés manuellement, et importés manuellement dans SQL une seule fois pour écrire les requêtes SQL. |
 | Indice GSCPI, publié par la Réserve fédérale de New York  | Excel |Mesure mensuelle des tensions mondiales sur les chaînes d'approvisionnement, afin d’effectuer un croisement avec les retards de la chaine logistique aéronautique et savoir si les retards suivent les tensions mondiales ou s'ils sont propres à certaines références. | Fichier Excel téléchargé par script Python depuis son URL, à relancer chaque mois. |
+| API Frankfurter (BCE) | API (JSON) | Mesure le taux de change EUR/USD. Le taux de change peut influencer le coût d'achat des pièces ; je teste si le croisement mensuel révèle un lien | Appel de l'API par script sans clé |
 
 ## 3. L'organisation du dépôt
 
@@ -41,7 +42,7 @@ Repérer les références qui ont le plus de retard (en incluant les manquants c
 
 <!-- Les étapes de ton projet. La première est faite. Tu cocheras les suivantes une fois le module terminé, quand tu appliqueras chaque méthode à ton projet : remplace alors [ ] par [x]. -->
 - [x] Sujet choisi, dossiers créés, dépôt publié
-- [ ] Collecte des données
+- [x] Collecte des données
 - [ ] Requêtes SQL
 - [ ] Nettoyage et dataset final
 - [ ] Stockage en base
