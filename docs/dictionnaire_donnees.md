@@ -81,3 +81,56 @@ Règle de la table : une seule ligne par mois (clé primaire annee + mois). L'AP
 - **Fournisseur et site :** `supplier_id` et `site_id` restent de simples colonnes, sans tables séparées, par simplicité. À noter : dans toutes mes commandes, `supplier_id` est identique au fournisseur principal de la pièce.
 - **Données personnelles : non.** Le jeu Kaggle est synthétique et les autres sources sont des indicateurs publics agrégés. Aucune fiche RGPD n'est nécessaire.
 - **Limite :** les données de commandes et de stock sont synthétiques. Mon croisement avec le GSCPI et les taux de change sert à tester ma méthode, pas à tirer des conclusions sur le monde réel.
+
+## Schéma de la base
+
+```mermaid
+erDiagram
+    PIECES ||--o{ COMMANDES : "est commandee dans"
+    PIECES ||--o{ HISTORIQUE_HEBDO : "a un historique"
+
+    PIECES {
+        varchar(10) part_id PK
+        varchar(30) part_family
+        char(1) criticality_class
+        decimal unit_cost
+        int lead_time_days
+        varchar(10) supplier_id_primary
+        varchar(10) supplier_risk_class
+    }
+    COMMANDES {
+        varchar(10) po_id PK
+        varchar(10) part_id FK
+        varchar(10) supplier_id
+        varchar(10) site_id
+        date order_date
+        date promised_date
+        date receipt_date
+        int ordered_qty
+        int received_qty
+        int annee
+        int mois
+    }
+    HISTORIQUE_HEBDO {
+        int id PK
+        varchar(10) part_id FK
+        varchar(10) site_id
+        date date
+        int consumption_qty
+        int on_hand_qty
+        int backorder_qty
+        int annee
+        int mois
+    }
+    GSCPI_MENSUEL {
+        date date PK
+        decimal gscpi
+        int annee
+        int mois
+    }
+    TAUX_CHANGE_MENSUEL {
+        int annee PK
+        int mois PK
+        decimal taux_eur_usd_moyen
+    }
+```
