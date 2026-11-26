@@ -5,25 +5,26 @@
   Repères Markdown : une ligne qui commence par # est un titre ; une ligne qui commence par - est une puce.
 -->
 
-# [Titre de ton projet]
+# Projet final Airbus Helicopters
 
 <!-- Une phrase qui dit ce que fait ton projet. Exemple : « Prévoir la production de 6 boulangeries selon la météo pour réduire les invendus. » -->
-[Ton projet en une phrase.]
+Repérer les références qui ont le plus de retard (en incluant les manquants comme retards extrêmes) pour agir en priorité dessus.
 
 ## 1. Le problème
 
 <!-- Reprends ta fiche projet : le contexte en 2 ou 3 phrases, la question centrale, l'utilisateur. -->
-- **Contexte** : [la situation et le problème constaté]
-- **Question centrale** : [Comment … pour … ?]
-- **Utilisateur** : [qui prend une décision grâce au projet]
+- **Contexte** : Pour absorber la hausse des commandes, Airbus Helicopters doit accélérer sa production : son carnet de commandes atteignait 1 122 hélicoptères fin septembre 2026 (source : résultats à neuf mois 2026 d'Airbus). Cependant, la moindre pièce manquante ou en retard bloque toute la chaîne d'assemblage.
+- **Question centrale** : Comment identifier et prioriser les références critiques à partir des écarts de délais pour sécuriser la montée en cadence d'Airbus Hélicoptères ?
+- **Utilisateur** : Les managers du département logistique 
 
 ## 2. Les données
 
 <!-- Une ligne par source envisagée, comme dans ta fiche projet. -->
-| Source | Type | Ce qu'elle apporte |
-| --- | --- | --- |
-| [Nom de la source et qui la publie] | [CSV, Excel, site web, API, base de données] | [Les données utiles au projet] |
-| [Nom de la source et qui la publie] | [Type] | [Les données utiles au projet] |
+| Source | Type | Ce qu'elle apporte | comment je la récupère et à quel rythme |
+| --- | --- | --- | --- |
+| Kaggle, Aerospace Supply Chain Performance & Forecasting | CSV | Contient les références de pièces, délais promis vs réels par commande fournisseur ainsi que l'historique hebdomadaire des ruptures et manquants. Jeu de données synthétique. Permet de calculer les 3 KPI et d’identifier composants critiques | fichiers CSV téléchargés manuellement, et importés manuellement dans SQL une seule fois pour écrire les requêtes SQL. |
+| Indice GSCPI, publié par la Réserve fédérale de New York  | Excel |Mesure mensuelle des tensions mondiales sur les chaînes d'approvisionnement, afin d’effectuer un croisement avec les retards de la chaine logistique aéronautique et savoir si les retards suivent les tensions mondiales ou s'ils sont propres à certaines références. | Fichier Excel téléchargé par script Python depuis son URL, à relancer chaque mois. |
+| API Frankfurter (BCE) | API (JSON) | Mesure le taux de change EUR/USD. Le taux de change peut influencer le coût d'achat des pièces ; je teste si le croisement mensuel révèle un lien | Appel de l'API par script sans clé |
 
 ## 3. L'organisation du dépôt
 
@@ -41,7 +42,7 @@
 
 <!-- Les étapes de ton projet. La première est faite. Tu cocheras les suivantes une fois le module terminé, quand tu appliqueras chaque méthode à ton projet : remplace alors [ ] par [x]. -->
 - [x] Sujet choisi, dossiers créés, dépôt publié
-- [ ] Collecte des données
+- [x] Collecte des données
 - [ ] Requêtes SQL
 - [ ] Nettoyage et dataset final
 - [ ] Stockage en base
@@ -49,4 +50,4 @@
 - [ ] Analyse et tableau de bord
 
 ---
-[Ton prénom et ton nom] · Formation Data Analyst & IA · DataSuits
+Emma Jovanovic · Formation Data Analyst & IA · DataSuits
